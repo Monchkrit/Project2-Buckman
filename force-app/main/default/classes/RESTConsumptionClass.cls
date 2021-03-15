@@ -12,9 +12,16 @@ public with sharing class RESTConsumptionClass {
             Object deserializedResponse = JSON.deserializeUntyped(response.getBody());
 
             Map<String, Object> respMap = (Map<String, Object>) deserializedResponse;
-            Map<String, Object> records = (Map<String, Object>) respMap.get('$oid');
-            system.debug(records);
+            List<Object> records = (List<Object>) respMap.get('result');
+            List<Map<String, Object>> theMap = new List<Map<String, Object>>();
+            Map<String, Object> anotherMap = new Map<String, Object>();
 
+            for (object record : records)
+            {
+                anotherMap = (Map<String, Object>) record;
+                theMap.add(anotherMap);
+                System.debug(anothermap.get('om_r'));
+            }
         }
         return null;
     }

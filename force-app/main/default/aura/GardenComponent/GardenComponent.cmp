@@ -1,4 +1,4 @@
-<aura:component controller="RESTConsumptionClass">
+<aura:component controller="RESTConsumptionClass" implements="flexipage:availableForAllPageTypes">
   <aura:attribute name="soil" type="Soil_Survey__c[]" />
   
 </aura:component>

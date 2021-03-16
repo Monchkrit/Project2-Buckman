@@ -1,4 +1,9 @@
 <aura:component controller="RESTConsumptionClass" implements="flexipage:availableForAllPageTypes">
-  <aura:attribute name="soil" type="Soil_Survey__c[]" />
   
+  
+  <aura:attribute name="soilSurveys" type="Soil_Survey__c[]" />
+  <aura:attribute name="columns" type="List" />
+
+  <c:SoilComponent soilSurveys="{! v.soilSurveys}" />
+
 </aura:component>

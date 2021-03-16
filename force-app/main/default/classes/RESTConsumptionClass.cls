@@ -1,7 +1,7 @@
 public with sharing class RESTConsumptionClass {
     // Where the callout method begins.
-    @InvocableMethod
-    public static string makeCallout()
+    @AuraEnabled
+    public static List<Map<String, Object>> makeCallout()
     {
         Http http = new Http();
         HttpRequest request = new HttpRequest();
@@ -21,8 +21,8 @@ public with sharing class RESTConsumptionClass {
             {
                 anotherMap = (Map<String, Object>) record;
                 theMap.add(anotherMap);
-                System.debug(anothermap.get('om_r'));
             }
+            return theMap;
         }
         return null;
     }

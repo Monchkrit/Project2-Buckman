@@ -1,0 +1,4 @@
+<aura:component controller="RESTConsumptionClass">
+  <aura:attribute name="soil" type="Soil_Survey__c[]" />
+  
+</aura:component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>hzdept_r__c</columns>
+    <columns>om_r__c</columns>
+    <columns>awc_r__c</columns>
+    <columns>wsatiated_r__c</columns>
+    <columns>kwfact__c</columns>
+    <columns>ph1to1h2o_r__c</columns>
+    <columns>cokey__c</columns>
+    <columns>compname__c</columns>
+    <columns>slope_r__c</columns>
+    <columns>runoff__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Records</label>
+</ListView>

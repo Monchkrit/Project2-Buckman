@@ -1,5 +1,6 @@
 public with sharing class RESTConsumptionClass {
     // Where the callout method begins.
+    @InvocableMethod
     public static string makeCallout()
     {
         Http http = new Http();

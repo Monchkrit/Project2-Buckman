@@ -23,13 +23,13 @@ public with sharing class RESTConsumptionClass {
                 anotherMap = (Map<String, Object>) record;
                 
                 Soil_Survey__c newSurvey = new Soil_Survey__c();
-                //newSurvey.irrcapscl__c = (Decimal) anotherMap.get('irrcapscl');
-                //newSurvey.musym__c = (Decimal) anotherMap.get('musym');
+                newSurvey.irrcapscl__c = (String) anotherMap.get('irrcapscl');
+                newSurvey.musym__c = (String) anotherMap.get('musym');
                 newSurvey.mukey__c = (Integer) anotherMap.get('mukey');
                 newSurvey.kwfact__c = (Decimal) anotherMap.get('kwfact');
                 newSurvey.geomdesc__c = (String) anotherMap.get('geomdesc');
-                //newSurvey.ffd_r__c = (Integer) anotherMap.get('ffd_r');
-                //newSurvey.elev_r__c = (Integer) anotherMap.get('elev_r');
+                newSurvey.ffd_r__c = String.valueOf(anotherMap.get('ffd_r'));
+                newSurvey.elev_r__c = String.valueOf(anotherMap.get('elev_r'));
                 newSurvey.drainagecl__c = (String) anotherMap.get('drainagecl');
                 newSurvey.compname__c = (String) anotherMap.get('compname');
                 newSurvey.cokey__c = (Integer) anotherMap.get('cokey');                
@@ -40,15 +40,15 @@ public with sharing class RESTConsumptionClass {
                 newSurvey.om_r__c = (Decimal) anotherMap.get('om_r');
                 newSurvey.ph1to1h2o_r__c = (Decimal) anotherMap.get('ph1to1h2o_r');
                 newSurvey.runoff__c = (String) anotherMap.get('runoff');
-                //newSurvey.slope_r__c = (Integer) anotherMap.get('slope_r');
+                newSurvey.slope_r__c = String.valueOf(anotherMap.get('slope_r'));
                 newSurvey.tfact__c = (Integer) anotherMap.get('tfact');
-                //newSurvey.wsatiated_r__c = (Integer) anotherMap.get('wsatiated_r');
+                newSurvey.wsatiated_r__c = String.valueOf(anotherMap.get('wsatiated_r'));
                 
                 surveyList.add(newSurvey);
             }
-            //return surveyList;
+            return surveyList;
         }
-        // System.debug(surveyList);
+        System.debug(surveyList);
         return surveyList;
     }
 }

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <fullName>All</fullName>
     <columns>NAME</columns>
-    <columns>hzdept_r__c</columns>
     <columns>om_r__c</columns>
     <columns>awc_r__c</columns>
     <columns>wsatiated_r__c</columns>

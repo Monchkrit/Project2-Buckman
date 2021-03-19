@@ -1,0 +1,14 @@
+<aura:component controller="RESTConsumptionClass">
+
+  <aura:handler name="init" value="{! this}" action="{! c.tabinit2}" />
+  <aura:attribute name="soilSurveys2" type="Soil_Survey__c[]" />
+  <aura:attribute name="columns2" type="List" />
+<div>
+  <lightning:datatable
+  keyField="id"
+  data="{! v.soilSurveys2}"
+  columns="{! v.columns2}"/>
+
+</div>
+    
+</aura:component>

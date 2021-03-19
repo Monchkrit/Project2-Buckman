@@ -3,8 +3,9 @@ public class RESTConsumptionClass {
 
     @AuraEnabled
     public static List<Soil_Survey__c> makeCallout1()
-    {        
+    {   
         List<Soil_Survey__c> surveyList = new List<Soil_Survey__c>();
+        
         Http http = new Http();
         HttpRequest request = new HttpRequest();
         request.setEndpoint('http://47.35.26.53:19740/ssapp/survey/EcA/');

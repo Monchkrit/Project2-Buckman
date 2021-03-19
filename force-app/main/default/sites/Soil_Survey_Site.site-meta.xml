@@ -17,7 +17,7 @@
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
     <genericErrorPage>Exception</genericErrorPage>
     <inMaintenancePage>InMaintenance</inMaintenancePage>
-    <indexPage>CommunitiesLanding</indexPage>
+    <indexPage>Soil_Survey_VF_Page</indexPage>
     <masterLabel>Soil Survey Site</masterLabel>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>

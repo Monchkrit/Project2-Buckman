@@ -155,6 +155,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Soil_Survey__c.hzdept_r__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Soil_Survey__c.irrcapcl__c</field>
         <readable>false</readable>

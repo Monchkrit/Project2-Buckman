@@ -26,6 +26,8 @@ public class RESTConsumptionClass {
                 Soil_Survey__c newSurvey = new Soil_Survey__c();
                 newSurvey.muname__c = (String) anotherMap.get('muname');
                 newSurvey.musym__c = String.valueOf(anotherMap.get('musym'));
+                newSurvey.awc_r__c = (Decimal) anotherMap.get('awc_r');
+                newSurvey.om_r__c = (Decimal) anotherMap.get('om_r');
                 newSurvey.mukey__c = (Integer) anotherMap.get('mukey');
                 newSurvey.kwfact__c = (Decimal) anotherMap.get('kwfact');
                 newSurvey.geomdesc__c = (String) anotherMap.get('geomdesc');
@@ -68,8 +70,7 @@ public class RESTConsumptionClass {
                 
                 Soil_Survey__c newSurvey = new Soil_Survey__c();
                 newSurvey.muname__c = (String) anotherMap.get('muname');
-                newSurvey.awc_r__c = (Decimal) anotherMap.get('awc_r');
-                newSurvey.om_r__c = (Decimal) anotherMap.get('om_r');
+                newSurvey.compname__c = (String) anotherMap.get('compname');
                 newSurvey.ph1to1h2o_r__c = (Decimal) anotherMap.get('ph1to1h2o_r');
                 newSurvey.runoff__c = (String) anotherMap.get('runoff');
                 newSurvey.slope_r__c = String.valueOf(anotherMap.get('slope_r'));

@@ -2,8 +2,7 @@
     tabinit2 : function(component) {
         component.set('v.columns2', [
             {label: 'Map Unit Name', fieldName: 'muname__c', type: 'text'},
-            {label: 'Soil Water Storage', fieldName: 'awc_r__c', type: 'number'},
-            {label: 'pH H2O', fieldName: 'ph1to1h2o_r__c', type: 'number'},
+            {label: 'Component Name', fieldName: 'compname__c', type: 'text'},
             {label: 'Organic Matter', fieldName: 'om_r__c', type: 'number'},
             {label: 'Runoff Class', fieldName: 'runoff__c', type: 'text'},
             {label: 'Soil Loss Tolerance', fieldName: 'tfact__c', type: 'number'},

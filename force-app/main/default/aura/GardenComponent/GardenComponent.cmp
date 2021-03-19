@@ -1,9 +1,9 @@
-<aura:component controller="RESTConsumptionClass" implements="flexipage:availableForAllPageTypes">
+<aura:component controller="RESTConsumptionClass" implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes" access="global">
   
   <aura:handler name="init" value="{!this}" action="{!c.getSoilSurveys1}" />
   <aura:handler name="init" value="{!this}" action="{!c.getSoilSurveys2}" />
-  <aura:attribute name="soilSurveys1" type="Soil_Survey__c[]" />
-  <aura:attribute name="mapunitsymbol" type="String" default="EcA" />
+  <aura:attribute name="soilSurveys1" type="Soil_Survey__c[]" access="global" />
+  <aura:attribute name="mapunitsymbol" type="String" default="EcA" access="global" />
   <aura:attribute name="soilSurveys2" type="Soil_Survey__c[]" />
 
   <c:SoilComponent soilSurveys1="{! v.soilSurveys1}" />
